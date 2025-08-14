@@ -151,17 +151,27 @@
         }
 
         .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .btn-github {
             background: transparent;
             color: white;
             border: 2px solid white;
         }
 
-        .btn-secondary:hover {
+        .btn-github:hover {
             background: white;
             color: #667eea;
             transform: translateY(-2px);
         }
-
         /* Sections */
         .section {
             padding: 80px 0;
@@ -454,6 +464,7 @@
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 1rem;
             }
 
             .timeline::before {
@@ -472,7 +483,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav class="container">
             <div class="logo">Menucha Gotliv</div>
@@ -486,7 +496,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>Menucha Gotliv</h1>
@@ -497,7 +506,7 @@
                     <i class="fas fa-envelope"></i>
                     Get In Touch
                 </a>
-                <a href="https://github.com/MenuchiGotliev" class="btn btn-secondary" target="_blank">
+                <a href="https://github.com/MenuchiGotliev" class="btn btn-github" target="_blank">
                     <i class="fab fa-github"></i>
                     View GitHub
                 </a>
@@ -505,7 +514,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About Me</h2>
@@ -523,11 +531,11 @@
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>0583239636</span>
+                            <a href="tel:0583239636" style="text-decoration: none; color: inherit;">0583239636</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>menucha.gotliv.dev@gmail.com</span>
+                            <a href="mailto:menucha.gotliv.dev@gmail.com" style="text-decoration: none; color: inherit;">menucha.gotliv.dev@gmail.com</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -543,7 +551,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
@@ -592,7 +599,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
             <h2 class="section-title">Professional Experience</h2>
@@ -628,7 +634,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
@@ -671,7 +676,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Let's Work Together</h2>
@@ -691,7 +695,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    
     <footer>
         <div class="container">
             <div class="social-links">
@@ -706,7 +710,6 @@
                 </a>
             </div>
             <p>&copy; 2025 Menucha Gotliv. All rights reserved.</p>
-          
         </div>
     </footer>
 
